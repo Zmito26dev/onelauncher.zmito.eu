@@ -2,8 +2,8 @@
   "latestJava": {
     "url2": "https://github.com/Zmito26dev/zetalauncher.zmito.eu/releases/download/Runtimes/jdk-22.0.1_windows-x64_bin.zip",
     "url": "http://192.168.1.131:3210/jdk-22.0.1_windows-x64_bin.zip",
-    "name": "jdk-22.0.1",
-    "version": "22.0.1" 
+    "name": "jdk-22.0.2",
+    "version": "22.0.2" 
   },
   "loginBackgroundURL": "https://onelauncher.zmito.eu/assets/launcher/loginBackground.png",
   "notice": {
