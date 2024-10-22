@@ -1,15 +1,15 @@
 {
   "latestJava": {
     "url2": "https://github.com/Zmito26dev/zetalauncher.zmito.eu/releases/download/Runtimes/jdk-22.0.1_windows-x64_bin.zip",
-    "url": "http://192.168.1.131:3210/jdk-22.0.1_windows-x64_bin.zip",
+    "url": "http://192.168.1.131:3210/jdk-22.0.2_windows-x64_bin.zip",
     "name": "jdk-22.0.2",
     "version": "22.0.2" 
   },
   "loginBackgroundURL": "https://onelauncher.zmito.eu/assets/launcher/loginBackground.png",
   "notice": {
-    "enabled": false,
-    "type": "alert",
-    "title": "Bug with Fabric modloader",
-    "message": "The Fabric Loader download above is the bare minimum. Combine it with Fabric API to get all the important extra APIs mods use. It has to be put into the mods folder like any other mod."
+    "enabled": true,
+    "type": "success",
+    "title": "Esto es una prueba jeje",
+    "message": "Bueno esto es un mensajito de ejemplo me voy a poner a escribir aqui un ratito haber como sale, seria muy graciaoso que este texto algun dia lo leyesen 500 personas al dia, taria guapo"
   }
 }
