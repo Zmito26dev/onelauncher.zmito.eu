@@ -8,7 +8,7 @@
   "loginBackgroundURL": "https://onelauncher.zmito.eu/assets/launcher/loginBackground.png",
   "notice": {
     "enabled": true,
-    "type": "notice",
+    "type": "alert",
     "title": "Pre-release build",
     "message": "Please note that this version of ONE Launcher is a pre-release build and may contain bugs. Our development team is continuously working to enhance its functionality and reliability."
   }
