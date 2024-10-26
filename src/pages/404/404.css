@@ -1,0 +1,19 @@
+.not-found-page {
+  height: calc(100% - 240px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.nfp-title {
+  margin: 0;
+  font-size: 140px;
+  line-height: 140px;
+}
+
+.nfp-text {
+  margin: 0;
+  font-size: 40px;
+}

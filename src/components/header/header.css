@@ -9,6 +9,11 @@
 
 .banner-logo {
   height: 60px;
+  transition: 0.2s;
+}
+
+.banner-logo:hover {
+  transform: scale(1.04);
 }
 
 .header-links {
@@ -31,11 +36,13 @@
   color: white;
   text-decoration: none;
   border-radius: 8px;
+  transition: 0.2s;
+}
+
+.header-link:hover {
+  transform: scale(1.04);
 }
 
 .active {
-  font-family: "Poppins", serif;
   font-weight: 800;
-  font-style: normal;
-  text-decoration: underline;
 }

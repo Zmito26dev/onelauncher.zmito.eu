@@ -30,6 +30,11 @@
   text-decoration: none;
   color: white;
   background: linear-gradient(150deg, #0596ff 0%, #146ee0 100%);
+  transition: 0.2s;
+}
+
+.h-dl-windows:hover {
+  transform: scale(1.02);
 }
 
 .h-dl-windows svg {
