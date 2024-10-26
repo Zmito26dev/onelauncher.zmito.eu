@@ -5,7 +5,7 @@
     "name": "jdk-22.0.2",
     "version": "22.0.2" 
   },
-  "loginBackgroundURL": "https://onelauncher.zmito.eu/assets/launcher/loginBackground.png",
+  "loginBackgroundURL": "https://onelauncher.zmito.eu/launcher/loginBackground.png",
   "notice": {
     "enabled": true,
     "type": "alert",
