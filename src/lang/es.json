@@ -1,0 +1,33 @@
+{
+  "header": {
+    "dl": "Descargas",
+    "devs": "Para desarrolladores"
+  },
+  "home": {
+    "title1": "El lanzador de Minecraft para",
+    "title2": "servidores multijugador modificados",
+    "dlButton": "Descargar para Windows",
+    "showcase": {
+      "title": "Por qué ONE Launcher",
+      "activate-content": {
+        "title": "Activa Contenido",
+        "text": "Activa tu Contenido (instancias) con un solo clic, usando una URL o una clave de n-point. No es necesario instalar mods, loaders o JDK runtimes manualmente."
+      },
+      "updates": {
+        "title": "Actualizaciones automáticas",
+        "text": "Ten siempre los mods y archivos necesarios actualizados para jugar en tus servidores favoritos."
+      },
+      "all-in-one": {
+        "title": "Todos tus servidores en ONE Launcher",
+        "text": "Juega y gestiona todas tus instancias de servidores desde ONE Launcher, con una interfaz muy fácil de usar."
+      }
+    }
+  },
+  "footer": {
+    "links": {
+      "home": "Inicio",
+      "dl": "Descargas",
+      "devs": "Para desarrolladores"
+    }
+  }
+}

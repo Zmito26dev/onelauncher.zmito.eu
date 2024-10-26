@@ -1,0 +1,117 @@
+.h-main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h-title {
+  margin: 35px 0 0 0;
+  text-align: center;
+}
+
+.h-title-text {
+  margin: 0;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 52px;
+  line-height: 58px;
+}
+
+.h-dl-windows {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: fit-content;
+  padding: 0 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(150deg, #0596ff 0%, #146ee0 100%);
+}
+
+.h-dl-windows svg {
+  height: 35px;
+  margin: 0 15px 0 0;
+}
+
+.h-dl-windows p {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.h-main-img {
+  width: 90%;
+  max-width: 980px;
+  border-radius: 8px;
+  box-shadow: 6px 6px 10px #00000060;
+}
+
+.h-why-text {
+  margin: 50px 0 10px 0;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 42px;
+  text-align: center;
+}
+
+.h-section {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px 0;
+  img {
+    max-height: fit-content;
+    width: 590px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 10px #00000060;
+  }  
+}
+
+.h-section-right {
+  width: 710px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  h3 {
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+  }
+}
+
+.h-section-left {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  h3 {
+    margin: 0;
+    text-align: end;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+  }
+}
+
+.h-section-right p, .h-section-left p {
+  max-width: 80%;
+  margin: 0;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.h-section-left p {
+  text-align: end;
+}

@@ -1,0 +1,41 @@
+.header {
+  margin: 20px 0 20px 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-logo {
+  height: 60px;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 0 20px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  height: 60px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.active {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: underline;
+}
