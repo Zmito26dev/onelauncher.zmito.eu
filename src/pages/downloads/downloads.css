@@ -1,0 +1,137 @@
+.dl-main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dl-latest {
+  margin: 35px 0 0 0;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dl-latest-title {
+  margin: 0;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 52px;
+  line-height: 58px;
+  background: linear-gradient(120deg, #EA821A 0%, #ea471a 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dl-dl-windows {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: fit-content;
+  padding: 0 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(150deg, #0596ff 0%, #146ee0 100%);
+  transition: 0.2s;
+  svg {
+    height: 35px;
+    margin: 0 15px 0 0;
+  };
+  p {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+  };
+}
+
+.dl-dl-windows:hover {
+  transform: scale(1.02);
+}
+
+.dl-changelogs-container {
+  margin: 50px 0 0 0;
+  width: 100%;
+  min-height: 200px;
+  background-color: black;
+  border-radius: 12px;
+}
+
+.dl-changelogs-title {
+  margin: 20px 20px;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 42px;
+}
+
+.dl-changelogs {
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.dl-changelog-article {
+  padding: 10px 20px;
+  background-color: #0e0e0e;
+  width: calc(100% - 80px);
+  border-radius: 12px;
+}
+
+.dl-changelog-article-href {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  h2 {
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    transition: 0.2s;
+  };
+  svg path {
+    transition: 0.2s;
+  };
+}
+
+.dl-changelog-article-href:hover {
+  h2 {
+    color: lightblue;
+  };
+  svg path {
+    stroke: lightblue;
+  };
+}
+
+.dl-changelog {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+    color: lightblue;
+  };
+  p {
+    margin: 0;
+  };
+  ul {
+    margin: 10px 0px;
+    padding-inline-start: 30px;
+  }
+  blockquote {
+    border-left: 3px solid lightblue;
+    padding: 0 15px;
+    margin: 16px 10px;
+  }
+  a {
+    color: lightblue;
+  }
+}
