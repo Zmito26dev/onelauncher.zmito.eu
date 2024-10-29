@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './header.css'
+import { noticeAlertIcon } from '../../assets/svgs'
 
 const BannerLogo = <svg height="60" viewBox="0 0 848 300" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clipPath="url(#clip0_96_2)">
@@ -26,10 +27,15 @@ export default function Header() {
         <NavLink to="/" className='banner-logo'>{BannerLogo}</NavLink>
         <h1 style={{display: "none"}}>ONE Launcher</h1>
         <nav className='header-links'>
-          <NavLink to="/downloads" className='header-link'>{t("header.dl")}</NavLink>
+          <NavLink to="/releases" className='header-link'>{t("header.releases")}</NavLink>
           <NavLink to="/developers" className='header-link'>{t("header.devs")}</NavLink>
         </nav>
       </header>
+
+      <a href='https://github.com/Zmito26dev/onelauncher.zmito.eu/releases/latest' target="_blank" className="header-notice">
+        {noticeAlertIcon}
+        <p>{t("header.notice")}</p>
+      </a>
     </>
   )
 }

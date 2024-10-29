@@ -1,7 +1,15 @@
 {
   "header": {
-    "dl": "Descargas",
-    "devs": "Para desarrolladores"
+    "releases": "Versiones",
+    "devs": "Para desarrolladores",
+    "notice": "Esta versión de ONE Launcher es una versión beta que no está completa y puede contener errores. Para más info, haga clic aquí."
+  },
+  "footer": {
+    "links": {
+      "home": "Inicio",
+      "releases": "Versiones",
+      "devs": "Para desarrolladores"
+    }
   },
   "home": {
     "title1": "El lanzador de Minecraft para",
@@ -11,7 +19,7 @@
       "title": "Por qué ONE Launcher",
       "activate-content": {
         "title": "Activa Contenido",
-        "text": "Activa tu Contenido (instancias) con un solo clic, usando una URL o una clave de n-point. No es necesario instalar mods, loaders o JDK runtimes manualmente."
+        "text": "Activa tu Contenido (instancias) con un solo clic, usando una URL o una clave de npoint. No es necesario instalar mods, loaders o JDK runtimes manualmente."
       },
       "updates": {
         "title": "Actualizaciones automáticas",
@@ -23,11 +31,8 @@
       }
     }
   },
-  "footer": {
-    "links": {
-      "home": "Inicio",
-      "dl": "Descargas",
-      "devs": "Para desarrolladores"
-    }
+  "releases": {
+    "title": "Ultima release ",
+    "changelogs": "Changelogs y versiones antiguas"
   }
 }
