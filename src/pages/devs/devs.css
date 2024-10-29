@@ -1,0 +1,18 @@
+.devs-main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.devs-title {
+  margin: 35px 0 0 0;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 52px;
+  line-height: 58px;
+  background: linear-gradient(120deg, #EA821A 0%, #ea471a 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

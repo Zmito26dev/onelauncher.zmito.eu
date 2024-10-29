@@ -36,28 +36,28 @@ export default function DownloadsPage() {
       {releases.length > 0 &&
         <>
           <div className="dl-latest">
-            <h2 className="dl-latest-title">{`Latest beta release ${releases[0].tag_name}`}</h2>
+            <h2 className="dl-latest-title">{t("releases.title") + releases[0].name}</h2>
+            <a href="https://github.com/Zmito26dev/onelauncher.zmito.eu/releases/latest/download/ONELauncher-installer.exe" className="dl-dl-windows">
+              {windowsIcon}
+              <p>{t("home.dlButton")}</p>
+            </a>
           </div>
-          
-          <a href="https://github.com/Zmito26dev/onelauncher.zmito.eu/releases/latest/download/ONELauncher-installer.exe" className="dl-dl-windows">
-            {windowsIcon}
-            <p>{t("home.dlButton")}</p>
-          </a>
+
+          <div className="dl-changelogs-container">
+            <h2 className="dl-changelogs-title">{t("releases.changelogs")}</h2>
+            <div className="dl-changelogs">
+              {releases.map((release) => (
+                <ChangelogArticle
+                  key={release.id}
+                  url={release.html_url}
+                  title={release.name}
+                  body={release.body}
+                />
+              ))}
+            </div>
+          </div>
         </>
       }
-      <div className="dl-changelogs-container">
-        <h2 className="dl-changelogs-title">Changelogs</h2>
-        <div className="dl-changelogs">
-          {releases.map((release) => (
-            <ChangelogArticle
-              key={release.id}
-              url={release.html_url}
-              title={release.name}
-              body={release.body}
-            />
-          ))}
-        </div>
-      </div>
     </div>
   )
 }

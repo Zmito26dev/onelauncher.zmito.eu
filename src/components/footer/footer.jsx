@@ -12,7 +12,7 @@ export default function Footer() {
       <div className='ft-links'>
         <Link to="/" className="ft-link">{t("footer.links.home")}</Link>
         <p className="ft-link-separator">|</p>
-        <Link to="/downloads" className="ft-link">{t("footer.links.dl")}</Link>
+        <Link to="/releases" className="ft-link">{t("footer.links.releases")}</Link>
         <p className="ft-link-separator">|</p>
         <Link to="/developers" className="ft-link">{t("footer.links.devs")}</Link>
       </div>

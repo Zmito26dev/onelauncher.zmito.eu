@@ -51,3 +51,16 @@
 .active:hover {
   transform: none;
 }
+
+.header-notice {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #cd7217;
+  display: flex;
+  align-items: center;
+  p {
+    margin: 0 0 0 10px;
+  }
+}
