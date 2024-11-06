@@ -6,7 +6,7 @@ export default function DevsPage() {
 
   return (
     <div className="devs-main">
-      <h2 class="devs-title">Available soon</h2>
+      <h2 className="devs-title">Available soon</h2>
     </div>
   )
 }

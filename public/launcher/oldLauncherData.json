@@ -1,0 +1,11 @@
+{
+  "latestJava": {
+    "url": "https://download.oracle.com/java/22/archive/jdk-22.0.2_windows-x64_bin.zip",
+    "name": "jdk-22.0.2",
+    "version": "22.0.2" 
+  },
+  "loginBackgroundURL": "https://onelauncher.zmito.eu/launcher/loginBackground.png",
+  "notice": {
+    "enabled": false
+  }
+}
