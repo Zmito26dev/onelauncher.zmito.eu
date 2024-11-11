@@ -15,6 +15,8 @@ export default function Footer() {
         <Link to="/releases" className="ft-link">{t("footer.links.releases")}</Link>
         <p className="ft-link-separator">|</p>
         <Link to="/developers" className="ft-link">{t("footer.links.devs")}</Link>
+        <p className="ft-link-separator">|</p>
+        <Link to="/manage-content" className="ft-link">{t("footer.links.manage-content")}</Link>
       </div>
       <a className="ft-createdbyz" href="https://links.zmito.eu" target='_blank'>
         {createdByZ}

@@ -2,13 +2,14 @@
   "header": {
     "releases": "Versiones",
     "devs": "Para desarrolladores",
-    "notice": "Esta versión de ONE Launcher es una versión beta que no está completa y puede contener errores. Para más info, haga clic aquí."
+    "notice": "Esta versión de ONE Launcher es una versión beta que no está completa y puede contener errores. Mas información proximamente."
   },
   "footer": {
     "links": {
       "home": "Inicio",
       "releases": "Versiones",
-      "devs": "Para desarrolladores"
+      "devs": "Para desarrolladores",
+      "manage-content": "Administrar Contenido"
     }
   },
   "home": {

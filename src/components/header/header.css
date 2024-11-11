@@ -60,6 +60,7 @@
   background-color: #cd7217;
   display: flex;
   align-items: center;
+  user-select: none;
   p {
     margin: 0 0 0 10px;
   }

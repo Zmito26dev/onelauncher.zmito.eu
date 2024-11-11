@@ -2,13 +2,14 @@
   "header": {
     "releases": "Releases",
     "devs": "For developers",
-    "notice": "This version of ONE Launcher is a beta build which is not complete and may contain bugs. For more information click here."
+    "notice": "This version of ONE Launcher is a beta build which is not complete and may contain bugs. More information soon."
   },
   "footer": {
     "links": {
       "home": "Home",
       "releases": "Releases",
-      "devs": "For developers"
+      "devs": "For developers",
+      "manage-content": "Manage Content"
     }
   },
   "home": {

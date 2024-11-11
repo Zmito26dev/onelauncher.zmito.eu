@@ -32,7 +32,7 @@ export default function Header() {
         </nav>
       </header>
 
-      <a href='https://github.com/Zmito26dev/onelauncher.zmito.eu/releases/latest' target="_blank" className="header-notice">
+      <a target="_blank" className="header-notice">
         {noticeAlertIcon}
         <p>{t("header.notice")}</p>
       </a>
