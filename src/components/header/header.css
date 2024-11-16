@@ -10,10 +10,15 @@
 .banner-logo {
   height: 60px;
   transition: 0.2s;
-}
-
-.banner-logo:hover {
-  transform: scale(1.04);
+  &.active {
+    cursor: default;
+    &:hover {
+      transform: none;
+    }
+  }
+  &:hover {
+    transform: scale(1.04);
+  }
 }
 
 .header-links {

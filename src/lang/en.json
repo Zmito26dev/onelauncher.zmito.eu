@@ -9,7 +9,7 @@
       "home": "Home",
       "releases": "Releases",
       "devs": "For developers",
-      "manage-content": "Manage Content"
+      "content-editor": "Content JSON Editor"
     }
   },
   "home": {
@@ -35,5 +35,12 @@
   "releases": {
     "title": "Latest release ",
     "changelogs": "Changelogs & old versions"
+  },
+  "content-editor": {
+    "title": "Content JSON Editor",
+    "mode-selector": {
+      "edit": "Update existing Content JSON",
+      "create": "Create new Content JSON"
+    }
   }
 }

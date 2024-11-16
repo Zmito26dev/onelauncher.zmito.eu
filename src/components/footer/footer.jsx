@@ -16,8 +16,9 @@ export default function Footer() {
         <p className="ft-link-separator">|</p>
         <Link to="/developers" className="ft-link">{t("footer.links.devs")}</Link>
         <p className="ft-link-separator">|</p>
-        <Link to="/manage-content" className="ft-link">{t("footer.links.manage-content")}</Link>
+        <Link to="/content-editor" className="ft-link">{t("footer.links.content-editor")}</Link>
       </div>
+      <p className="ft-not-mc">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
       <a className="ft-createdbyz" href="https://links.zmito.eu" target='_blank'>
         {createdByZ}
       </a>

@@ -25,8 +25,9 @@ export default function ManageContentPage() {
       try {
         const response = await fetch(fileUrl);
         const data = await response.json()
-        console.log(data)
+        setFileContent(data);
         setIsFileChosed(true);
+        console.log(data);
       } catch (error) {
         console.log("Invalid JSON url.")
       }
@@ -44,7 +45,7 @@ export default function ManageContentPage() {
             setIsFileChosed(true)
             console.log(parsedJson);
           } catch (error) {
-            console.error('Error reading JSON:', error);
+            console.log('Error reading JSON:', error);
           }
         };
         reader.readAsText(selectedFile);
@@ -96,12 +97,12 @@ export default function ManageContentPage() {
 
   return (
     <div className="mcont-page">
-      <h2 className="mc-title">Manage Content</h2>
+      <h2 className="mc-title">{t("content-editor.title")}</h2>
 
       <div className="mc-main-container">
         <div className="mc-mode-selector">
-          <ModeButton mode="update" label="Update existing Content JSON"/>
-          <ModeButton mode="create" label="Create new Content JSON"/>
+          <ModeButton mode="update" label={t("content-editor.mode-selector.edit")}/>
+          <ModeButton mode="create" label={t("content-editor.mode-selector.create")}/>
         </div>
         <div className="mc-main">
           {contentMode === "update" ? <UpdateMode /> : contentMode === "create" ? <CreateMode /> : <></>}

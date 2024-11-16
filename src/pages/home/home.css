@@ -75,7 +75,10 @@
     width: 590px;
     border-radius: 8px;
     box-shadow: 6px 6px 10px #00000060;
-  }  
+  }
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .h-section-right {

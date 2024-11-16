@@ -9,7 +9,7 @@
       "home": "Inicio",
       "releases": "Versiones",
       "devs": "Para desarrolladores",
-      "manage-content": "Administrar Contenido"
+      "content-editor": "Editor de Content JSON"
     }
   },
   "home": {
@@ -35,5 +35,12 @@
   "releases": {
     "title": "Ultima release ",
     "changelogs": "Changelogs y versiones antiguas"
+  },
+  "content-editor": {
+    "title": "Editor de Content JSON",
+    "mode-selector": {
+      "edit": "Editar un Content JSON existente",
+      "create": "Crear nuevo Content JSON"
+    }
   }
 }

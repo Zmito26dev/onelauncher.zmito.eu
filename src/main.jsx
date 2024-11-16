@@ -19,7 +19,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<HomePage/>}/>
         <Route path="/releases" element={<DownloadsPage/>}/>
         <Route path="/developers" element={<DevsPage/>}/>
-        <Route path="/manage-content" element={<ManageContentPage/>}/>
+        <Route path="/content-editor" element={<ManageContentPage/>}/>
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
       <Footer/>
