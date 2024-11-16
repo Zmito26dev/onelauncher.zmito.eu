@@ -28,7 +28,7 @@
   justify-content: center;
   padding: 0 20px 0 20px;
   font-family: "Poppins", serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   font-size: 20px;
   height: 60px;
@@ -37,19 +37,17 @@
   text-decoration: none;
   border-radius: 8px;
   transition: 0.2s;
-}
-
-.header-link:hover {
-  transform: scale(1.04);
-}
-
-.active {
-  font-weight: 800;
-  cursor: default;
-}
-
-.active:hover {
-  transform: none;
+  &:hover {
+    transform: scale(1.04);
+  }
+  &.active {
+    background-color: white;
+    color: black;
+    cursor: default;
+    &:hover {
+      transform: none;
+    }
+  }
 }
 
 .header-notice {

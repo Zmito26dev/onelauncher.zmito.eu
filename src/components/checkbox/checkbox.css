@@ -1,0 +1,36 @@
+.cb-main {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: fit-content;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cb-main-disabled {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: fit-content;
+}
+
+.cb-main p, .cb-main-disabled p {
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0 0 0 10px;
+}
+
+.cb-check {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: #222222;
+  transition: 0.1s;
+}
+
+/* .cb-description {
+  margin: 2px 0 8px 40px;
+  font-size: 14px;
+  color: lightgray;
+} */

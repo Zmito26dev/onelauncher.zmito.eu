@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import "./manage-content.css"
+import MC_Editor from '../../components/editor/editor';
 
 export default function ManageContentPage() {
   const {t} = useTranslation();
@@ -82,14 +83,14 @@ export default function ManageContentPage() {
   
     return (
       <>
-        {!isFileChosed ? <ChoseFile /> : <p style={{margin: "0"}}>Available soon</p>}
+        {!isFileChosed ? <ChoseFile /> : <MC_Editor jsonData={fileContent}/>}
       </>
     );
   };
 
   const CreateMode = () => {
     return (
-      <p style={{margin: "0"}}>Available soon</p>
+      <MC_Editor />
     )
   }
 

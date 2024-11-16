@@ -1,0 +1,27 @@
+.loader-selector-button {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 0 15px;
+  height: 40px;
+  font-family: "Poppins", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+  background-color: #222222;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    border: 2px solid white;
+  }
+  &:disabled {
+    border: 2px solid white;
+    cursor: default;
+  }
+}
+
+.loader-selector {
+  user-select: none;
+  display: flex;
+  gap: 10px;
+}

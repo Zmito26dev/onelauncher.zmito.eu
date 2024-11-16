@@ -29,33 +29,34 @@
 .mc-mode-button {
   color: white;
   background-color: black;
+  border: 2px solid transparent;
   height: 50px;
   padding: 0 15px;
   font-family: "Poppins", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
-  border: 0;
   border-radius: 6px;
   cursor: pointer;
   transition: 0.2s;
-}
-
-.mc-mode-button:disabled {
-  transition: 0.2s;
-  background-color: #222222;
-  cursor: default;
+  &:hover {
+    border: 2px solid white;
+  }
+  &:disabled {
+    border: 2px solid white;
+    cursor: default;
+  }
 }
 
 .mc-main {
   margin: 10px 0 0 0;
   width: 100%;
-  height: 600px;
   background-color: black;
   border-radius: 6px;
 }
 
 .mc-chose-file {
+  padding: 40px 0;
   height: 100%;
   width: 100%;
   display: flex;
