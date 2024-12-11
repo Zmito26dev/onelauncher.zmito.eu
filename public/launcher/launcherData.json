@@ -1,15 +1,14 @@
 {
-  "latestJava": {
-    "url2": "https://github.com/Zmito26dev/zetalauncher.zmito.eu/releases/download/Runtimes/jdk-22.0.1_windows-x64_bin.zip",
-    "url": "http://192.168.1.131:3210/jdk-22.0.2_windows-x64_bin.zip",
-    "name": "jdk-22.0.2",
-    "version": "22.0.2" 
-  },
   "loginBackgroundURL": "https://onelauncher.zmito.eu/launcher/loginBackground.png",
   "notice": {
     "enabled": true,
     "type": "alert",
-    "title": "Pre-release build",
-    "message": "Please note that this version of ONE Launcher is a pre-release build and may contain bugs. Our development team is continuously working to enhance its functionality and reliability."
+    "title": "Beta build",
+    "message": "Please note that this version of ONE Launcher is a beta build and may contain bugs. Our development team is continuously working to enhance its functionality and reliability."
+  },
+  "latestJava": {
+    "url": "https://download.oracle.com/java/22/archive/jdk-22.0.2_windows-x64_bin.zip",
+    "name": "jdk-22.0.2",
+    "version": "22.0.2" 
   }
 }
