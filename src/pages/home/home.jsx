@@ -17,7 +17,7 @@ export default function HomePage() {
           <h2 className="h-title-text">{t("home.title1")}</h2>
           <h2 className="h-title-text">{t("home.title2")}</h2>
         </div>
-        <a href="https://github.com/Zmito26dev/onelauncher.zmito.eu/releases/latest/download/ONELauncher-installer.exe" className="h-dl-windows">
+        <a href="https://github.com/Zmito26dev/onelauncher.zmito.eu/releases/latest/download/onelauncher-installer.exe" className="h-dl-windows">
           {windowsIcon}
           <p>{t("home.dlButton")}</p>
         </a>
@@ -25,29 +25,32 @@ export default function HomePage() {
       </div>
 
       <h2 className="h-why-text">{t("home.showcase.title")}</h2>
-      <div className="h-section">
-        <div className="h-section-right">  
-          <h3>{t("home.showcase.activate-content.title")}</h3>
-          <p>{t("home.showcase.activate-content.text")}</p>
+      <div className="h-sections">
+        <div className="h-section">
+          <div className="h-section-text">  
+            <h3>{t("home.showcase.activate-content.title")}</h3>
+            <p>{t("home.showcase.activate-content.text")}</p>
+          </div>
+          <img src={activateContentImg} alt="" />
         </div>
-        <img src={activateContentImg} alt="" />
+
+        <div className="h-section h-section-left">
+          <div className="h-section-text">  
+            <h3>{t("home.showcase.updates.title")}</h3>
+            <p>{t("home.showcase.updates.text")}</p>
+          </div>
+          <img src={needUpdateImg} alt="" />
+        </div>
+
+        <div className="h-section">
+          <div className="h-section-text">  
+            <h3>{t("home.showcase.all-in-one.title")}</h3>
+            <p>{t("home.showcase.all-in-one.text")}</p>
+          </div>
+          <img src={libraryImg} alt="" />
+        </div>
       </div>
 
-      <div className="h-section">
-      <img src={needUpdateImg} alt="" />
-        <div className="h-section-left">  
-          <h3>{t("home.showcase.updates.title")}</h3>
-          <p>{t("home.showcase.updates.text")}</p>
-        </div>
-      </div>
-
-      <div className="h-section">
-        <div className="h-section-right">  
-          <h3>{t("home.showcase.all-in-one.title")}</h3>
-          <p>{t("home.showcase.all-in-one.text")}</p>
-        </div>
-        <img src={libraryImg} alt="" />
-      </div>
     </div>
   )
 }

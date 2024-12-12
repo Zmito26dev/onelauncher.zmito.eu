@@ -26,7 +26,12 @@
   -webkit-text-fill-color: transparent;
 }
 
-.dl-dl-windows {
+.dl-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.dl-windows {
   margin: 20px 0;
   display: flex;
   align-items: center;
@@ -50,8 +55,33 @@
   };
 }
 
-.dl-dl-windows:hover {
+.dl-windows:hover {
   transform: scale(1.02);
+}
+
+.dl-disabled {
+  user-select: none;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: fit-content;
+  padding: 0 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  background: #808080;
+  transition: 0.2s;
+  svg {
+    height: 35px;
+    margin: 0 15px 0 0;
+  };
+  p {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+  };
 }
 
 .dl-changelogs-container {
@@ -115,9 +145,12 @@
 
 .dl-changelog {
   h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+    margin: 10px 0 0 0;
     font-weight: 600;
     color: lightblue;
+  };
+  h1, h2 {
+    margin: 0;
   };
   p {
     margin: 0;

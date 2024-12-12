@@ -33,8 +33,8 @@ export default function Header() {
       </header>
 
       <a target="_blank" className="header-notice">
-        {noticeAlertIcon}
-        <p>{t("header.notice")}</p>
+        <div className="notice-icon">{noticeAlertIcon}</div>
+        <div className="notice-text"><p>{t("header.notice")}</p></div>
       </a>
     </>
   )

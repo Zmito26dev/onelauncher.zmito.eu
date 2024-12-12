@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
-import { linkIcon, windowsIcon } from "../../assets/svgs";
+import { linkIcon, linuxIcon, macOSIcon, windowsIcon } from "../../assets/svgs";
 import Markdown from "react-markdown";
 import "./downloads.css"
 
@@ -36,11 +36,21 @@ export default function DownloadsPage() {
       {releases.length > 0 &&
         <>
           <div className="dl-latest">
-            <h2 className="dl-latest-title">{t("releases.title") + releases[0].name}</h2>
-            <a href="https://github.com/Zmito26dev/onelauncher.zmito.eu/releases/latest/download/ONELauncher-installer.exe" className="dl-dl-windows">
-              {windowsIcon}
-              <p>{t("home.dlButton")}</p>
-            </a>
+            <h2 className="dl-latest-title">{t("releases.title") + releases[0].tag_name}</h2>
+            <div className="dl-buttons">
+              <a href="https://github.com/Zmito26dev/onelauncher.zmito.eu/releases/latest/download/onelauncher-installer.exe" className="dl-windows">
+                {windowsIcon}
+                <p>Download for Windows</p>
+              </a>
+              <a className="dl-disabled" title="Available soon">
+                {linuxIcon}
+                <p>Download for Linux</p>
+              </a>
+              <a className="dl-disabled" title="Available soon">
+                {macOSIcon}
+                <p>Download for MacOS</p>
+              </a>
+            </div>
           </div>
 
           <div className="dl-changelogs-container">
