@@ -1,8 +1,8 @@
 {
   "loginBackgroundURL": "https://onelauncher.zmito.eu/launcher/loginBackground.png",
   "notice": {
-    "enabled": false,
-    "type": "alert",
+    "enabled": true,
+    "type": "check",
     "title": "Beta build",
     "message": "This version of ONE Launcher is a beta build which is not complete and may contain bugs."
   },
