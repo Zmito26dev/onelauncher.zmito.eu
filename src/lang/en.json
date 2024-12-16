@@ -26,6 +26,14 @@
         "title": "Automatic updates",
         "text": "Always have the necessary mods and files updated to play your favorite servers with mods."
       },
+      "msaauth": {
+        "title": "Minecraft account support",
+        "text": "ONE Launcher is compatible with official/premium Minecraft accounts, you just have to authenticate with your Microsoft Account."
+      },
+      "loaders": {
+        "title": "Compatible with all Mod Loaders",
+        "text": "Supports all current Mod Loaders, including Fabric, Forge, Quilt and NeoForge. The launcher will install the version necessary for the corresponding Minecraft version."
+      },
       "all-in-one": {
         "title": "All your servers in ONE Launcher",
         "text": "Play and manage all your servers from ONE Launcher, with a very easy to use interface."

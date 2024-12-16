@@ -99,8 +99,38 @@ export function ForgeVersions({ minecraftVersion }) {
       for (let i = 0; i < versionElements.length; i++) {
         const version = versionElements[i].textContent;
         if (version.startsWith(minecraftVersion + "-")) {
-          stableVersions.push(version.replace(minecraftVersion + "-", ""));
+          stableVersions.push(version);
         }
+      }
+
+      setVersions(stableVersions);
+    };
+
+    fetchData();
+  }, [minecraftVersion]);
+
+  return versions.map((version) => (
+    <option key={version} value={version}>
+      {version}
+    </option>
+  ));
+}
+
+export function NeoForgeVersions({ minecraftVersion }) {
+  const [versions, setVersions] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const parser = new DOMParser();
+      const stableVersions = [];
+
+      const response = await fetch("https://maven.neoforged.net/releases/net/neoforged/neoforge/maven-metadata.xml");
+      const data = await response.text();
+      const xmlDoc = parser.parseFromString(data, "text/xml");
+      const versionElements = xmlDoc.getElementsByTagName("version");
+      for (let i = versionElements.length - 1; i >= 0; i--) {
+        const version = versionElements[i].textContent;
+        stableVersions.push(version);
       }
 
       setVersions(stableVersions);

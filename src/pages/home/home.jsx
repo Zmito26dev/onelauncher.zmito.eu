@@ -5,6 +5,8 @@ import "./home.css"
 import mainImg from "../../assets/launcher/main.webp"
 import activateContentImg from "../../assets/launcher/activate-content.webp"
 import needUpdateImg from "../../assets/launcher/need-update.webp"
+import msaAuthImg from "../../assets/launcher/msa-auth.webp"
+import loadersImg from "../../assets/launcher/loaders.webp"
 import libraryImg from "../../assets/launcher/library.webp"
 
 export default function HomePage() {
@@ -40,6 +42,22 @@ export default function HomePage() {
             <p>{t("home.showcase.updates.text")}</p>
           </div>
           <img src={needUpdateImg} alt="" />
+        </div>
+
+        <div className="h-section">
+          <div className="h-section-text">  
+            <h3>{t("home.showcase.msaauth.title")}</h3>
+            <p>{t("home.showcase.msaauth.text")}</p>
+          </div>
+          <img src={msaAuthImg} alt="" />
+        </div>
+
+        <div className="h-section h-section-left">
+          <div className="h-section-text">  
+            <h3>{t("home.showcase.loaders.title")}</h3>
+            <p>{t("home.showcase.loaders.text")}</p>
+          </div>
+          <img src={loadersImg} alt="" />
         </div>
 
         <div className="h-section">

@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 import { infoIcon, downloadIcon, copyIcon } from "../../assets/svgs"
-import { MinecraftVersions, FabricVersions, QuiltVersions, ForgeVersions } from "./components/versions-loader"
+import { MinecraftVersions, FabricVersions, QuiltVersions, ForgeVersions, NeoForgeVersions } from "./components/versions-loader"
 import LoaderSelector from "./components/loader-selector/loader-selector"
 import CheckBox from "../checkbox/checkbox"
 import "./editor.css"
@@ -10,7 +10,7 @@ export default function MC_Editor({jsonData}) {
   const [maintenanceMode, setMaintenaceMode] = useState(false)
   const selectedLoaderState = useState("fabric")
   const [selectedLoader, setSelectedLoader] = selectedLoaderState
-  const [minecraftVersion, setMinecraftVersion] = useState("1.21.3")
+  const [minecraftVersion, setMinecraftVersion] = useState("1.21.4")
 
   const nameRef = useRef(null)
   const idRef = useRef(null)
@@ -47,6 +47,8 @@ export default function MC_Editor({jsonData}) {
   }
 
   function generateJSON() {
+    const keepedFiles = keepedFilesRef.current ? keepedFilesRef.current.value.split(',') : [];
+
     const iJSON = {
       "id": idRef.current.value,
       "name": nameRef.current.value,
@@ -58,9 +60,9 @@ export default function MC_Editor({jsonData}) {
       "mcLoader": selectedLoader,
       "mcLoaderVer": loaderVerRef.current ? loaderVerRef.current.value : "",
       "mcServerIP": serverIpRef.current.value,
-      "updateVer": updateVerRef.current.value.replace(/\,/g, "."),
+      "updateVer": parseFloat(updateVerRef.current.value),
       "updateFileUrl": updateFileRef.current ? updateFileRef.current.value : "",
-      "updateKeepedFiles": keepedFilesRef.current ? keepedFilesRef.current.value : ""
+      "updateKeepedFiles": keepedFiles
     }
 
     const filterEmptyProperties = (obj) => {
@@ -163,6 +165,7 @@ export default function MC_Editor({jsonData}) {
                 selectedLoader === "fabric" ? <FabricVersions minecraftVersion={minecraftVersion}/> :
                 selectedLoader === "quilt" ? <QuiltVersions /> :
                 selectedLoader === "forge" ? <ForgeVersions minecraftVersion={minecraftVersion}/> :
+                selectedLoader === "neoforge" ? <NeoForgeVersions minecraftVersion={minecraftVersion}/> :
                 <option value={undefined}>Not available</option>
               }
             </select>

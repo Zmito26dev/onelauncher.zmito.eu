@@ -26,6 +26,14 @@
         "title": "Actualizaciones automáticas",
         "text": "Ten siempre los mods y archivos necesarios actualizados para jugar en tus servidores favoritos."
       },
+      "msaauth": {
+        "title": "Soporte de cuenta de Minecraft",
+        "text": "ONE Launcher es compatible con cuentas oficiales/premium de Minecraft, solo tienes que autenticarte con tu cuenta de Microsoft."
+      },
+      "loaders": {
+        "title": "Compatible con todos los Mod Loaders",
+        "text": "Admite todos los Mod Loaders actuales, incluidos Fabric, Forge, Quilt y NeoForge. El lanzador instalará la versión necesaria para la versión de Minecraft correspondiente."
+      },
       "all-in-one": {
         "title": "Todos tus servidores en ONE Launcher",
         "text": "Juega y gestiona todas tus instancias de servidores desde ONE Launcher, con una interfaz muy fácil de usar."

@@ -129,6 +129,7 @@
     }
   }
   .h-section-text {
+    margin-bottom: 10px;
     width: 590px;
     text-align: center;
     p, h3 {
