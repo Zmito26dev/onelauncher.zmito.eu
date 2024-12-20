@@ -5,6 +5,7 @@ html {
   background-size: cover;
   background-attachment: fixed;
   background-image: url("assets/gradient.png");
+  scrollbar-gutter: stable;
 }
 
 :root {
@@ -16,7 +17,6 @@ html {
 }
 
 #root {
-  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -24,7 +24,6 @@ html {
 
 body {
   margin: 0;
-  height: 100%;
   width: 100%;
   overflow-x: hidden;
   transition: 0.2s;
