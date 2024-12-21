@@ -9,6 +9,10 @@ export default function DownloadsPage() {
   const [releases, setReleases] = useState([])
 
   useEffect(() => {
+    document.title = "ONE Launcher — Releases";
+  }, []);
+
+  useEffect(() => {
     const fetchReleases = async () => {
       const response = await fetch("https://api.github.com/repos/Zmito26dev/onelauncher.zmito.eu/releases");
       const data = await response.json();

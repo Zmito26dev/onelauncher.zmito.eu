@@ -7,6 +7,10 @@ export default function ManageContentPage() {
   const {t} = useTranslation();
   const [contentMode, setContentMode] = useState("update")
 
+  useEffect(() => {
+    document.title = "ONE Launcher — Content JSON Editor";
+  }, []);
+
   const ModeButton = ({ mode, label }) => {
     return (
       <button className="mc-mode-button" disabled={contentMode === mode} onClick={() => setContentMode(mode)}>{label}</button>

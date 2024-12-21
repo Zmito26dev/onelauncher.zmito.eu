@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { windowsIcon } from "../../assets/svgs"
 import { useTranslation } from 'react-i18next';
 import "./home.css"
@@ -11,6 +11,10 @@ import libraryImg from "../../assets/launcher/library.webp"
 
 export default function HomePage() {
   const {t} = useTranslation();
+
+  useEffect(() => {
+    document.title = "ONE Launcher — Home";
+  }, []);
 
   return (
     <div className="home-page">

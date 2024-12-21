@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './header.css'
@@ -20,6 +20,18 @@ const BannerLogo = <svg height="60" viewBox="0 0 848 300" fill="none" xmlns="htt
 
 export default function Header() {
   const {t} = useTranslation();
+  const [noticeData, setNoticeData] = useState()
+
+  useEffect(() => {
+    async function loadNoticeData() {
+      const timestamp = Date.now();
+      const response = await fetch(`https://onelauncher.zmito.eu/launcher/launcherData.json?t=${timestamp}`);
+      const data = await response.json()
+      setNoticeData(data.notice.message)
+    }
+    
+    loadNoticeData()
+  }, [])
 
   return (
     <>
@@ -34,7 +46,7 @@ export default function Header() {
 
       <a target="_blank" className="header-notice">
         <div className="notice-icon">{noticeAlertIcon}</div>
-        <div className="notice-text"><p>{t("header.notice")}</p></div>
+        <div className="notice-text"><p>{noticeData}</p></div>
       </a>
     </>
   )
