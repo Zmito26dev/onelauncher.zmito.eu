@@ -142,7 +142,7 @@ export default function MC_Editor({jsonData}) {
       <div className="mc-me-section">
           <h3 className="mc-me-title">Minecraft Server IP</h3>
           <input type="text" className="text-input" name="name" ref={serverIpRef} placeholder="Server IP"/>
-          <MoreInfoLabel label="IP publica del servidor de minecraft. Se va a utilizar para mostrar si el servidor no esta en linea o si esta en linea para mostar el numero de jugadores "/>
+          <MoreInfoLabel label="The public IP address of the Minecraft server will be used to indicate its online status and player count."/>
       </div>
       <div className="mc-me-section">
         <h3 className="mc-me-title">Loader<span style={{color: "#ff6e6e"}}>*</span></h3>
@@ -185,7 +185,7 @@ export default function MC_Editor({jsonData}) {
       <div className="mc-me-section">
         <h3 className="mc-me-title">Update Version<span style={{color: "#ff6e6e"}}>*</span></h3>
         <input type="number" min="1" step="0.1" className="number-input" name="name" ref={updateVerRef} placeholder="Number of the new update version"/>
-        <MoreInfoLabel label='Number of the new update version. No puede ser una menor.'/>
+        <MoreInfoLabel label='Version number of the new update. Must be higher than the preceding version.'/>
       </div>
       <div className="mc-me-options">
         <span className="mc-me-separator"/>

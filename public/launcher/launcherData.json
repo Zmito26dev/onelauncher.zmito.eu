@@ -3,8 +3,8 @@
   "notice": {
     "enabled": true,
     "type": "alert",
-    "title": "Beta build",
-    "message": "This version of ONE Launcher is a beta build which is not complete and may contain bugs."
+    "title": "Documentation Now Available",
+    "message": "The ONE Launcher documentation page is now live. If you want to learn how to create a Content instance, please visit docs.onelauncher.zmito.eu. Please note that this version of ONE Launcher is a beta build which is not complete and may contain bugs."
   },
   "latestJava": {
     "url": "https://download.oracle.com/java/22/archive/jdk-22.0.2_windows-x64_bin.zip",
