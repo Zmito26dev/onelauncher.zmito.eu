@@ -1,6 +1,6 @@
 import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 import HomePage from './pages/home/home';
@@ -12,7 +12,7 @@ import "./i18n"
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <HashRouter>
     <div className="web">
       <Header/>
       <Routes>
@@ -24,5 +24,5 @@ createRoot(document.getElementById('root')).render(
       </Routes>
       <Footer/>
     </div>
-  </BrowserRouter>
+  </HashRouter>
 )

@@ -40,7 +40,7 @@ export default function Header() {
         <h1 style={{display: "none"}}>ONE Launcher</h1>
         <nav className='header-links'>
           <NavLink to="/releases" className='header-link'>{t("header.releases")}</NavLink>
-          <NavLink to="/developers" className='header-link'>{t("header.devs")}</NavLink>
+          <a className="header-link" target='_blank' href="https://docs.onelauncher.zmito.eu/">{t("header.devs")}</a>
         </nav>
       </header>
 
