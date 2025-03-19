@@ -68,7 +68,7 @@
 .mc-file-input {
   height: 150px;
   width: 450px;
-  background-color: #0E0E0E;
+  background-color: #222222;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@
   padding: 0;
   height: 50px;
   width: 450px;
-  background-color: #0E0E0E;
+  background-color: #222222;
   border-radius: 6px;
 }
 

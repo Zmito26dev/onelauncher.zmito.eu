@@ -24,17 +24,19 @@ export default function Header() {
   return (
     <>
       <header className='header'>
-        <NavLink to="/" className='banner-logo'>{BannerLogo}</NavLink>
-        <h1 style={{display: "none"}}>ONE Launcher</h1>
-        <nav className='header-links'>
-          <NavLink to="/releases" className='header-link'>{t("header.releases")}</NavLink>
-          <a className="header-link" target='_blank' href="https://docs.onelauncher.zmito.eu/">{t("header.devs")}</a>
-        </nav>
+        <div className='header-content'>
+          <NavLink to="/" className='banner-logo' onClick={() => window.scrollTo(0, 0)}>{BannerLogo}</NavLink>
+          <h1 style={{display: "none"}}>ONE Launcher</h1>
+          <nav className='header-links'>
+            <NavLink to="/releases" className='header-link'>{t("header.releases")}</NavLink>
+            <a className="header-link" target='_blank' href="https://docs.onelauncher.zmito.eu/">{t("header.devs")}</a>
+          </nav>
+        </div>
       </header>
 
       <a target="_blank" className="header-notice">
         <div className="notice-icon">{noticeAlertIcon}</div>
-        <div className="notice-text"><p>This version of ONE Launcher is a beta build which is not complete and may contain bugs.</p></div>
+        <div className="notice-text"><p>{t("header.notice")}</p></div>
       </a>
     </>
   )

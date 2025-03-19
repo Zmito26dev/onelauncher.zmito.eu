@@ -4,6 +4,7 @@ import { MinecraftVersions, FabricVersions, QuiltVersions, ForgeVersions, NeoFor
 import LoaderSelector from "./components/loader-selector/loader-selector"
 import CheckBox from "../checkbox/checkbox"
 import "./editor.css"
+import ImageLoader from "./components/image-loader"
 
 export default function MC_Editor({jsonData}) {
   const [showInfo, setShowInfo] = useState(false)
@@ -11,6 +12,13 @@ export default function MC_Editor({jsonData}) {
   const selectedLoaderState = useState("fabric")
   const [selectedLoader, setSelectedLoader] = selectedLoaderState
   const [minecraftVersion, setMinecraftVersion] = useState("1.21.4")
+
+  const backgroundState = useState(null)
+  const bannerState = useState(null)
+  const titleState = useState(null)
+  const [background, setBackground] = backgroundState
+  const [banner, setBanner] = bannerState
+  const [title, setTitle] = titleState
 
   const nameRef = useRef(null)
   const idRef = useRef(null)
@@ -28,6 +36,9 @@ export default function MC_Editor({jsonData}) {
       nameRef.current.value = jsonData.name || '';
       idRef.current.value = jsonData.id || '';
       setMaintenaceMode(jsonData.maintenance);
+      setBanner(jsonData.bannerURL);
+      setBackground(jsonData.bgURL);
+      setTitle(jsonData.titleURL);
       bannerRef.current.value = jsonData.bannerURL || '';
       bgRef.current.value = jsonData.bgURL || '';
       titleRef.current.value = jsonData.titleURL || '';
@@ -53,9 +64,9 @@ export default function MC_Editor({jsonData}) {
       "id": idRef.current.value,
       "name": nameRef.current.value,
       "maintenance": maintenanceMode,
-      "bannerURL": bannerRef.current.value,
-      "bgURL": bgRef.current.value,
-      "titleURL": titleRef.current.value,
+      "bannerURL": banner,
+      "bgURL": background,
+      "titleURL": title,
       "mcVer": minecraftVersion,
       "mcLoader": selectedLoader,
       "mcLoaderVer": loaderVerRef.current ? loaderVerRef.current.value : "",
@@ -110,39 +121,42 @@ export default function MC_Editor({jsonData}) {
     <div className="mc-main-editor">
       <button className="mc-me-toggle-info" onClick={() => setShowInfo(!showInfo)}>Show Info</button>
       <div className="mc-me-section">
-          <h3 className="mc-me-title" >Display name<span style={{color: "#ff6e6e"}}>*</span></h3>
-          <input type="text" className="text-input" name="name" onChange={handleNameChange} ref={nameRef} placeholder="Display name for the Content"/>
-          <MoreInfoLabel label="Display name of the Content."/>
+        <h3 className="mc-me-title" >Display name<span style={{color: "#ff6e6e"}}>*</span></h3>
+        <input type="text" className="text-input" name="name" onChange={handleNameChange} ref={nameRef} placeholder="Display name for the Content"/>
+        <MoreInfoLabel label="Display name of the Content."/>
       </div>
       <div className="mc-me-section">
-          <h3 className="mc-me-title">ID<span style={{color: "#ff6e6e"}}>*</span></h3>
-          <input type="text" className="text-input" name="name" ref={idRef} placeholder="ID of the Content Instance"/>
-          <MoreInfoLabel label="ID of the Content Instance, only lowercase letters, numbers or hyphens. Cannot be changed in the future."/>
+        <h3 className="mc-me-title">ID<span style={{color: "#ff6e6e"}}>*</span></h3>
+        <input type="text" className="text-input" name="name" ref={idRef} placeholder="ID of the Content Instance"/>
+        <MoreInfoLabel label="ID of the Content Instance, only lowercase letters, numbers or hyphens. Cannot be changed in the future."/>
       </div>
       <div className="mc-me-section">
-          <h3 className="mc-me-title">Background (URL)<span style={{color: "#ff6e6e"}}>*</span></h3>
-          <input type="text" className="text-input" name="name" ref={bgRef} placeholder="URL of the image or video"/>
-          <MoreInfoLabel label="URL of the image or video to be used as background on the Content page."/>
+        <h3 className="mc-me-title">Background (URL)<span style={{color: "#ff6e6e"}}>*</span></h3>
+        <input type="text" className="text-input" name="name" ref={bgRef} onChange={(e) => {setBackground(e.target.value)}} placeholder="URL of the image or video"/>
+        <MoreInfoLabel label="URL of the image or video to be used as background on the Content page."/>
+        <ImageLoader name="bg" imageState={backgroundState} />
       </div>
       <div className="mc-me-section">
-          <h3 className="mc-me-title">Banner Image (URL)<span style={{color: "#ff6e6e"}}>*</span></h3>
-          <input type="text" className="text-input" name="name" ref={bannerRef} placeholder="URL of the image"/>
-          <MoreInfoLabel label="URL of the image to be used as the Content banner on the main page."/>
+        <h3 className="mc-me-title">Banner Image (URL)<span style={{color: "#ff6e6e"}}>*</span></h3>
+        <input type="text" className="text-input" name="name" ref={bannerRef} onChange={(e) => {setBanner(e.target.value)}} placeholder="URL of the image"/>
+        <MoreInfoLabel label="URL of the image to be used as the Content banner on the main page."/>
+        <ImageLoader name="banner" imageState={bannerState} />
       </div>
       <div className="mc-me-section">
-          <h3 className="mc-me-title">Title Image (URL)</h3>
-          <input type="text" className="text-input" name="name" ref={titleRef} placeholder="URL of the image"/>
-          <MoreInfoLabel label="URL of the image to be used as the Content title. If none is provided, the Content name will be used as the title."/>
+        <h3 className="mc-me-title">Title Image (URL)</h3>
+        <input type="text" className="text-input" name="name" ref={titleRef} onChange={(e) => {setTitle(e.target.value)}} placeholder="URL of the image"/>
+        <MoreInfoLabel label="URL of the image to be used as the Content title. If none is provided, the Content name will be used as the title."/>
+        <ImageLoader name="title" imageState={titleState} />
       </div>
       <div className="mc-me-section">
-          <h3 className="mc-me-title">Maintenance Mode</h3>
-          <CheckBox label="Enable maintenace mode" isCheked={maintenanceMode} onChange={() => setMaintenaceMode(!maintenanceMode)}/>
-          <MoreInfoLabel label="Maintenance mode will disable the ability to play the Content until you disable it."/>
+        <h3 className="mc-me-title">Maintenance Mode</h3>
+        <CheckBox label="Enable maintenace mode" isCheked={maintenanceMode} onChange={() => setMaintenaceMode(!maintenanceMode)}/>
+        <MoreInfoLabel label="Maintenance mode will disable the ability to play the Content until you disable it."/>
       </div>
       <div className="mc-me-section">
-          <h3 className="mc-me-title">Minecraft Server IP</h3>
-          <input type="text" className="text-input" name="name" ref={serverIpRef} placeholder="Server IP"/>
-          <MoreInfoLabel label="The public IP address of the Minecraft server will be used to indicate its online status and player count."/>
+        <h3 className="mc-me-title">Minecraft Server IP</h3>
+        <input type="text" className="text-input" name="name" ref={serverIpRef} placeholder="Server IP"/>
+        <MoreInfoLabel label="The public IP address of the Minecraft server will be used to indicate its online status and player count."/>
       </div>
       <div className="mc-me-section">
         <h3 className="mc-me-title">Loader<span style={{color: "#ff6e6e"}}>*</span></h3>

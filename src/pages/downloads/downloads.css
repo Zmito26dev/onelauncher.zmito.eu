@@ -21,6 +21,7 @@
   font-style: normal;
   font-size: 52px;
   line-height: 58px;
+  color: white;
   background: linear-gradient(120deg, #EA821A 0%, #ea471a 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -110,7 +111,7 @@
 
 .dl-changelog-article {
   padding: 10px 20px;
-  background-color: #0e0e0e;
+  background-color: #222222;
   width: calc(100% - 80px);
   border-radius: 12px;
 }

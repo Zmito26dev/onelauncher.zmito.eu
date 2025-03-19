@@ -13,8 +13,8 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <HashRouter>
+    <Header/>
     <div className="web">
-      <Header/>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/releases" element={<DownloadsPage/>}/>
