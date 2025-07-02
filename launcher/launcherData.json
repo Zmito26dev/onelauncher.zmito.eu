@@ -1,10 +1,10 @@
 {
   "loginBackgroundURL": "https://onelauncher.zmito.eu/launcher/loginBackground.png",
   "notice": {
-    "enabled": false,
+    "enabled": true,
     "type": "alert",
-    "title": "Documentation Now Available",
-    "message": "The ONE Launcher documentation page is now live. If you want to learn how to create a Content instance, please visit docs.onelauncher.zmito.eu. Please note that this version of ONE Launcher is a beta build which is not complete and may contain bugs."
+    "title": "Beta build",
+    "message": "This version of ONE Launcher is a beta build which is not complete and may contain bugs."
   },
   "latestJava": {
     "url": "https://download.oracle.com/java/24/archive/jdk-24.0.1_windows-x64_bin.zip",
